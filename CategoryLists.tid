@@ -45,7 +45,7 @@ Tag:
 tag{$:/state/$(ListType)$List/search/SelectedTag}
 \end
 
-\define thisExpandAllButton()
+\define inmysocksCategoryListsExpandAllButton()
 <$button>Expand All
 	<$list filter='[prefix[$:/state/$(ListType)$List/ShowCategory/]!text[show]]'>
 		<$action-setfield $tiddler=<<currentTiddler>> text=show/>
@@ -53,7 +53,7 @@ tag{$:/state/$(ListType)$List/search/SelectedTag}
 </$button>
 \end
 
-\define thisCollapseAllButton()
+\define inmysocksCategoryListsCollapseAllButton()
 <$button>Collapse All
 	<$list filter='[prefix[$:/state/$(ListType)$List/ShowCategory/]text[show]]'>
 		<$action-setfield $tiddler=<<currentTiddler>> text=hide/>
@@ -89,7 +89,7 @@ tag{$:/state/$(ListType)$List/search/SelectedTag}
 
 </$reveal>
 
-<<thisExpandAllButton>> <<thisCollapseAllButton>>
+<<inmysocksCategoryListsExpandAllButton>> <<inmysocksCategoryListsCollapseAllButton>>
 
 <$reveal type='match' state='$:/state/$(ListType)$List/search/SelectedTag' text=''>
 	<$reveal type='match' state='$:/plugins/inmysocks/CategoryLists/CategoryLists!!true' text=$(ShowFinished)$>

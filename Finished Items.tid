@@ -246,6 +246,7 @@ subcategory[$(CurrentSubCategory)$]
 subsubcategory[$(CurrentSubSubCategory)$]
 \end
 
+\define thisMainBody()
 <$set name=RegExpSearch value={{$:/temp/$(ListType)$List/Search!!search_text}}>
 	<!-- Category Selected -->
 	<$reveal type='nomatch' state='$:/state/$(ListType)$List/SelectedCategory' text=''>
@@ -294,3 +295,6 @@ subsubcategory[$(CurrentSubSubCategory)$]
 		<<thisMakeTable>>
 	</$reveal>
 </$set>
+\end
+
+<<thisMainBody>>
