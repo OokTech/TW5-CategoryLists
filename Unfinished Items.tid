@@ -1,9 +1,9 @@
 caption: Unfinished Items
-tags: 
-title: $:/plugins/inmysocks/CategoryLists/Unfinished Items
+tags:
+title: $:/plugins/OokTech/CategoryLists/Unfinished Items
 
 \define thisListTemplate()
-<$reveal type='match' state='$:/plugins/inmysocks/CategoryLists/CategoryLists!!task' text=$(ListType)$ tag=tr>
+<$reveal type='match' state='$:/plugins/OokTech/CategoryLists/CategoryLists!!task' text=$(ListType)$ tag=tr>
 	<td style="""position:relative;width:5%;""">
 		<$button class="""tc-btn-invisible""" popup="""$:/state/popup/$(ListType)$list/$(CurrentEntry)$""" tooltip='$(ListType)$ Info'>{{$:/core/images/info-button}}
 		</$button>
@@ -34,7 +34,7 @@ title: $:/plugins/inmysocks/CategoryLists/Unfinished Items
 		</$fieldmangler>
 	</td>
 </$reveal>
-<$reveal type='match' state='$:/plugins/inmysocks/CategoryLists/CategoryLists!!event' text=$(ListType)$ tag=tr>
+<$reveal type='match' state='$:/plugins/OokTech/CategoryLists/CategoryLists!!event' text=$(ListType)$ tag=tr>
 	<td style="""position:relative;width:5%;""">
 		<$button class="""tc-btn-invisible""" popup="""$:/state/popup/$(ListType)$list/$(CurrentEntry)$""" tooltip='$(ListType)$ Info'>{{$:/core/images/info-button}}
 		</$button>
@@ -64,7 +64,7 @@ title: $:/plugins/inmysocks/CategoryLists/Unfinished Items
 
 				<$tiddler tiddler=<<CurrentEntry>>>
 
-					<$transclude tiddler='$:/plugins/inmysocks/CategoryLists/EditEntryTemplate' mode=block/>
+					<$transclude tiddler='$:/plugins/OokTech/CategoryLists/EditEntryTemplate' mode=block/>
 
 				</$tiddler>
 

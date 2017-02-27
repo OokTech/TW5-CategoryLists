@@ -1,4 +1,8 @@
-title: $:/plugins/inmysocks/CategoryLists/readme
+title: $:/plugins/OokTech/CategoryLists/readme
+
+This plugin is in the OokTech plugin library, you can add the library to your wiki by importing [[$:/pluginlibrary/OokTech/OokTechPlugins]] and then install the plugin using the `get more plugins` button in the $:/ControlPanel you can also import this plugin directly by importing the plugin tiddler [[$:/plugins/Ooktech/CategoryLists]]
+
+github: https://github.com/OokTech/TW5-CategoryLists
 
 At the moment this is presented as a task list, but it can be used for other things. I am currently using it as an [[issue tracker and change log|http://inmysocks.tiddlyspot.com/#Change%20Log]] for the work I do with TiddlyWiki.
 
@@ -50,3 +54,9 @@ __Parameters:__
 __Notes:__
 
 If you only want to have a single task list using the tags `Task` and `Done` than simply using `<<CategoryList>>` will work. If you want to have another list that is independent of the first list you can just put `<<CategoryList Tag:"School Task">>`. You can have as many lists as you want by changing the `TaskTag`, and if you want the `FinishedTag`.
+
+License: [[BSD 3 Clause|$:/plugins/OokTech/CategoryLists/License]]
+
+Creator: [[OokTech|$:/plugins/OokTech/OokTechInfo]]
+
+Source: [[GitHub|https://https://github.com/OokTech/TW5-CategoryLists]]
